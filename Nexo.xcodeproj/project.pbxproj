@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC1BFC3630B695D800E04063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BFC3530B695D800E04063 /* AppDelegate.swift */; };
+		EC1BFC3830B695D800E04063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BFC3730B695D800E04063 /* ViewController.swift */; };
+		EC1BFC3A30B695DD00E04063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC3930B695DD00E04063 /* Assets.xcassets */; };
+		EC1BFC3D30B695DD00E04063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC3B30B695DD00E04063 /* Main.storyboard */; };
+		EC1BFC5230B6994900E04063 /* images in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4530B6994400E04063 /* images */; };
+		EC1BFC5330B6994900E04063 /* exportar.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4630B6994400E04063 /* exportar.html */; };
+		EC1BFC5430B6994900E04063 /* historico.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4730B6994400E04063 /* historico.html */; };
+		EC1BFC5530B6994900E04063 /* importar.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4830B6994400E04063 /* importar.html */; };
+		EC1BFC5630B6994900E04063 /* css in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4930B6994500E04063 /* css */; };
+		EC1BFC5730B6994900E04063 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4A30B6994500E04063 /* index.html */; };
+		EC1BFC5830B6994900E04063 /* js in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4B30B6994600E04063 /* js */; };
+		EC1BFC5930B6994900E04063 /* notas.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4C30B6994700E04063 /* notas.html */; };
+		EC1BFC5A30B6994900E04063 /* sobre.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4D30B6994700E04063 /* sobre.html */; };
+		EC1BFC5B30B6994900E04063 /* divergencias.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4E30B6994700E04063 /* divergencias.html */; };
+		EC1BFC5C30B6994900E04063 /* escala.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC4F30B6994800E04063 /* escala.html */; };
+		EC1BFC5D30B6994900E04063 /* funcionarios.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC5030B6994800E04063 /* funcionarios.html */; };
+		EC1BFC5E30B6994900E04063 /* configuracoes.html in Resources */ = {isa = PBXBuildFile; fileRef = EC1BFC5130B6994800E04063 /* configuracoes.html */; };
+		EC1BFC6130B69A0300E04063 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1BFC6030B69A0300E04063 /* WebKit.framework */; platformFilter = maccatalyst; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC1BFC3230B695D800E04063 /* Nexo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1BFC3530B695D800E04063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC1BFC3730B695D800E04063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC1BFC3930B695DD00E04063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC1BFC3C30B695DD00E04063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC1BFC3E30B695DD00E04063 /* Nexo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nexo.entitlements; sourceTree = "<group>"; };
+		EC1BFC4530B6994400E04063 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		EC1BFC4630B6994400E04063 /* exportar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = exportar.html; sourceTree = "<group>"; };
+		EC1BFC4730B6994400E04063 /* historico.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = historico.html; sourceTree = "<group>"; };
+		EC1BFC4830B6994400E04063 /* importar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = importar.html; sourceTree = "<group>"; };
+		EC1BFC4930B6994500E04063 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
+		EC1BFC4A30B6994500E04063 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EC1BFC4B30B6994600E04063 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		EC1BFC4C30B6994700E04063 /* notas.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notas.html; sourceTree = "<group>"; };
+		EC1BFC4D30B6994700E04063 /* sobre.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sobre.html; sourceTree = "<group>"; };
+		EC1BFC4E30B6994700E04063 /* divergencias.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = divergencias.html; sourceTree = "<group>"; };
+		EC1BFC4F30B6994800E04063 /* escala.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = escala.html; sourceTree = "<group>"; };
+		EC1BFC5030B6994800E04063 /* funcionarios.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = funcionarios.html; sourceTree = "<group>"; };
+		EC1BFC5130B6994800E04063 /* configuracoes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = configuracoes.html; sourceTree = "<group>"; };
+		EC1BFC6030B69A0300E04063 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC1BFC2F30B695D800E04063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1BFC6130B69A0300E04063 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC1BFC2930B695D800E04063 = {
+			isa = PBXGroup;
+			children = (
+				EC1BFC3430B695D800E04063 /* Nexo */,
+				EC1BFC3330B695D800E04063 /* Products */,
+				EC1BFC5F30B69A0300E04063 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC1BFC3330B695D800E04063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC1BFC3230B695D800E04063 /* Nexo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC1BFC3430B695D800E04063 /* Nexo */ = {
+			isa = PBXGroup;
+			children = (
+				EC1BFC4430B6981D00E04063 /* Web */,
+				EC1BFC3530B695D800E04063 /* AppDelegate.swift */,
+				EC1BFC3730B695D800E04063 /* ViewController.swift */,
+				EC1BFC3930B695DD00E04063 /* Assets.xcassets */,
+				EC1BFC3B30B695DD00E04063 /* Main.storyboard */,
+				EC1BFC3E30B695DD00E04063 /* Nexo.entitlements */,
+			);
+			path = Nexo;
+			sourceTree = "<group>";
+		};
+		EC1BFC4430B6981D00E04063 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				EC1BFC5130B6994800E04063 /* configuracoes.html */,
+				EC1BFC4930B6994500E04063 /* css */,
+				EC1BFC4E30B6994700E04063 /* divergencias.html */,
+				EC1BFC4F30B6994800E04063 /* escala.html */,
+				EC1BFC4630B6994400E04063 /* exportar.html */,
+				EC1BFC5030B6994800E04063 /* funcionarios.html */,
+				EC1BFC4730B6994400E04063 /* historico.html */,
+				EC1BFC4530B6994400E04063 /* images */,
+				EC1BFC4830B6994400E04063 /* importar.html */,
+				EC1BFC4A30B6994500E04063 /* index.html */,
+				EC1BFC4B30B6994600E04063 /* js */,
+				EC1BFC4C30B6994700E04063 /* notas.html */,
+				EC1BFC4D30B6994700E04063 /* sobre.html */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		EC1BFC5F30B69A0300E04063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC1BFC6030B69A0300E04063 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC1BFC3130B695D800E04063 /* Nexo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1BFC4130B695DD00E04063 /* Build configuration list for PBXNativeTarget "Nexo" */;
+			buildPhases = (
+				EC1BFC2E30B695D800E04063 /* Sources */,
+				EC1BFC2F30B695D800E04063 /* Frameworks */,
+				EC1BFC3030B695D800E04063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nexo;
+			productName = Nexo;
+			productReference = EC1BFC3230B695D800E04063 /* Nexo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC1BFC2A30B695D800E04063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EC1BFC3130B695D800E04063 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EC1BFC2D30B695D800E04063 /* Build configuration list for PBXProject "Nexo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC1BFC2930B695D800E04063;
+			productRefGroup = EC1BFC3330B695D800E04063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC1BFC3130B695D800E04063 /* Nexo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC1BFC3030B695D800E04063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1BFC5230B6994900E04063 /* images in Resources */,
+				EC1BFC5830B6994900E04063 /* js in Resources */,
+				EC1BFC5330B6994900E04063 /* exportar.html in Resources */,
+				EC1BFC5C30B6994900E04063 /* escala.html in Resources */,
+				EC1BFC5D30B6994900E04063 /* funcionarios.html in Resources */,
+				EC1BFC5E30B6994900E04063 /* configuracoes.html in Resources */,
+				EC1BFC5530B6994900E04063 /* importar.html in Resources */,
+				EC1BFC5B30B6994900E04063 /* divergencias.html in Resources */,
+				EC1BFC5630B6994900E04063 /* css in Resources */,
+				EC1BFC5A30B6994900E04063 /* sobre.html in Resources */,
+				EC1BFC5430B6994900E04063 /* historico.html in Resources */,
+				EC1BFC5930B6994900E04063 /* notas.html in Resources */,
+				EC1BFC5730B6994900E04063 /* index.html in Resources */,
+				EC1BFC3A30B695DD00E04063 /* Assets.xcassets in Resources */,
+				EC1BFC3D30B695DD00E04063 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC1BFC2E30B695D800E04063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1BFC3830B695D800E04063 /* ViewController.swift in Sources */,
+				EC1BFC3630B695D800E04063 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC1BFC3B30B695DD00E04063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC1BFC3C30B695DD00E04063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC1BFC3F30B695DD00E04063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC1BFC4030B695DD00E04063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EC1BFC4230B695DD00E04063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nexo/Nexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2026.25.11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bisneto.Nexo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC1BFC4330B695DD00E04063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nexo/Nexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2026.25.11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bisneto.Nexo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC1BFC2D30B695D800E04063 /* Build configuration list for PBXProject "Nexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1BFC3F30B695DD00E04063 /* Debug */,
+				EC1BFC4030B695DD00E04063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1BFC4130B695DD00E04063 /* Build configuration list for PBXNativeTarget "Nexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1BFC4230B695DD00E04063 /* Debug */,
+				EC1BFC4330B695DD00E04063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC1BFC2A30B695D800E04063 /* Project object */;
+}

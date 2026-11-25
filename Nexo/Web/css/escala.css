@@ -1,0 +1,378 @@
+/* =========================================================
+   ESTRUTURA
+   ========================================================= */
+   
+.card-func-escala { border: 1px solid #dee2e6; border-radius: 10px; }
+.card-func-escala .dia-linha {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color, #f0f0f0);
+    align-items: center;
+}
+
+.card-func-escala .dia-linha:last-child { border-bottom: 0; }
+
+/* Badges e inputs */
+.badge-tipo-normal { background: #e3f4e8; color: #1b5e20; }
+.badge-tipo-folga  { background: #fde8e8; color: #9b1c1c; }
+.badge-tipo-inter  { background: #ffe0b2; color: #9a4d00; }
+.input-time-sm { max-width: 110px; }
+
+.card-func-escala .card-header {
+    user-select: none;
+}
+
+/* Cabeçalho (visível só a partir de tablet) */
+.card-func-escala .dia-linha-header {
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--border-color, #dee2e6);
+    opacity: 0.85;
+}
+
+.collapse-chevron {
+    transition: transform 0.2s ease;
+}
+
+/* padding-top vem do .container em themes.css */
+.escala-container {
+    max-width: 1100px;
+}
+
+.escala-container .card {
+    border: 0;
+    border-radius: 12px;
+}
+
+.escala-container h3 {
+    font-weight: 700;
+}
+
+.escala-container h5 {
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LISTA DE FUNCIONÁRIOS
+   ========================================================= */
+
+.lista-funcionarios {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.funcionario-card {
+    background: #00ff00;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.funcionario-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.funcionario-titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.funcionario-campos {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+}
+
+.funcionario-nome {
+    min-width: 0;
+}
+
+.funcionario-horarios {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.horario-dia {
+    min-width: 0;
+}
+
+.horario-dia label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.horario-dia input {
+    width: 100%;
+    min-width: 0;
+    font-size: 0.85rem;
+}
+
+.btn-folga {
+    margin-top: 5px;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   RESUMO
+   ========================================================= */
+
+
+.resumo-background {
+    background: var(--bg-body);
+    border-radius: 10px;
+    padding: 20px;
+}
+.resumo-escala {
+    padding: 16px;
+    /* background: #f8f9fa; */
+    background: #FFF;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+.resumo-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.resumo-periodo {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.resumo-quantidade {
+    margin-top: 12px;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   ESCALAS SALVAS
+   ========================================================= */
+
+.escala-salva {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: var(--bg-body);
+}
+
+.escala-salva-titulo {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.escala-salva-periodo {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.escala-salva-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #b6202f;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   TABLETS E DESKTOPS
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    .funcionario-campos {
+        grid-template-columns: 240px minmax(0, 1fr);
+        align-items: start;
+    }
+
+    .funcionario-horarios {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES ESTREITOS
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    /* .escala-container {
+        margin: 14px auto;
+    } */
+
+    .escala-container .card-body {
+        padding: 14px !important;
+    }
+
+    .funcionario-horarios {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}
+
+/* =========================================================
+   PERÍODO INTERMEDIÁRIO
+   ========================================================= */
+
+.inter-configuracao {
+    margin-top: 14px;
+    padding: 14px;
+    border: 1px solid #f0b45a;
+    border-left: 5px solid #e58b19;
+    border-radius: 8px;
+    background: #fff8ed;
+}
+
+.inter-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.inter-checkbox input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: #e58b19;
+    flex-shrink: 0;
+}
+
+.inter-campos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.inter-campos[hidden] {
+    display: none !important;
+}
+
+.inter-campos label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.inter-ajuda {
+    color: #80551d;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.inter-grupo label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.horario-dia-inter {
+    border: 1px solid #f0b45a;
+    border-radius: 8px;
+    padding: 8px;
+    background: #fff8ed;
+}
+
+.badge-inter {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #e58b19;
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+}
+
+@media (max-width: 360px) {
+    .inter-campos {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Mobile: empilha e mostra rótulos via data-label se quiser */
+@media (max-width: 767.98px) {
+    .card-func-escala .dia-linha {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .card-func-escala .dia-linha > .dia-data {
+        font-size: 0.95rem;
+        margin-bottom: 2px;
+    }
+}
+
+/* Tablet e Desktop: 5 colunas bem distribuídas */
+@media (min-width: 768px) {
+    .card-func-escala .dia-linha {
+        grid-template-columns: 
+            minmax(110px, 1.2fr)   /* Dia */
+            minmax(70px, 0.7fr)    /* Badge */
+            minmax(120px, 1.2fr)   /* Select Tipo */
+            minmax(110px, 1fr)     /* Entrada */
+            minmax(110px, 1fr);    /* Saída */
+        gap: 12px 16px;
+        padding: 10px 4px;
+    }
+
+    .card-func-escala .dia-linha select,
+    .card-func-escala .dia-linha input[type="time"] {
+        width: 100%;
+        max-width: none;          /* remove o limite antigo de 110px */
+        min-width: 0;
+    }
+}
+
+/* Desktop grande: ainda mais folga */
+@media (min-width: 992px) {
+    .card-func-escala .dia-linha {
+        grid-template-columns: 
+            minmax(130px, 1.3fr)
+            minmax(80px, 0.7fr)
+            minmax(140px, 1.3fr)
+            minmax(130px, 1fr)
+            minmax(130px, 1fr);
+        gap: 14px 20px;
+    }
+}
+
+.card-func-escala .form-select-sm,
+.card-func-escala .form-control-sm {
+    font-size: 0.875rem;
+}

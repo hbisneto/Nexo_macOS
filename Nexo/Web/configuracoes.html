@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Nexo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/themes.css" rel="stylesheet">
+    <link href="css/configuracoes.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar centralizado (carregado por js/navbar.js) -->
+    <div id="app-navbar"></div>
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+        <div class="card shadow-sm config-card">
+            <div class="card-body p-4">
+                
+                <h2 class="mb-4"><strong>Configurações</strong></h2>
+                <p class="text-muted mb-3">
+                    Configurações do aplicativo, incluindo aparência e preferências de exibição.
+                </p>
+                <hr class="my-4">
+
+                <!-- TABS -->
+                <ul class="nav nav-tabs mb-4" id="configTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="aparencia-tab" data-bs-toggle="tab"
+                                data-bs-target="#aparencia" type="button" role="tab">
+                            Aparência
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="interface-tab" data-bs-toggle="tab"
+                                data-bs-target="#interface" type="button" role="tab">
+                            Interface
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="motivos-tab" data-bs-toggle="tab"
+                                data-bs-target="#motivos" type="button" role="tab">
+                            Motivos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="lembrete-tab" data-bs-toggle="tab"
+                                data-bs-target="#lembrete" type="button" role="tab">
+                            Lembrete
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- ===================== TAB APARENCIA ===================== -->
+                <div class="tab-content" id="configTabsContent">
+                                        
+                    <div class="tab-pane fade show active" id="aparencia" role="tabpanel">
+
+                        <p class="text-muted mb-4">
+                            Escolha a cor de destaque do aplicativo. A cor escolhida será aplicada em botões, links e outros elementos.
+                        </p>
+
+                        <div class="appearance-colors">
+
+                            <label class="appearance-option" for="accentTeal">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="accentColor"
+                                    id="accentTeal"
+                                    value="#006F83"
+                                >
+
+                                <span class="appearance-color" style="background-color: #006F83;"></span>
+
+                                <span class="appearance-label">
+                                    <strong>Teal</strong>
+                                    <small>Padrão</small>
+                                </span>
+                            </label>
+
+                            <label class="appearance-option" for="accentRed">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="accentColor"
+                                    id="accentRed"
+                                    value="#b6202f"
+                                >
+
+                                <span class="appearance-color" style="background-color: #b6202f;"></span>
+
+                                <span class="appearance-label">
+                                    <strong>Vermelho</strong>
+                                    <small>Clássico</small>
+                                </span>
+                            </label>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="appearance-dark-mode">
+                            <div>
+                                <strong>Modo escuro</strong>
+                                <p class="text-muted small mb-0">
+                                    Ativar o tema escuro do aplicativo.
+                                </p>
+                            </div>
+
+                            <div class="form-check form-switch mb-0">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="cfg_darkMode"
+                                    role="switch"
+                                >
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ===================== TAB INTERFACE ===================== -->
+                    <div class="tab-pane fade" id="interface" role="tabpanel">
+                        <p class="text-muted mb-3">
+                            Escolha quais informações devem aparecer no formulário principal.
+                        </p>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cfg_codigoProduto">
+                            <label class="form-check-label" for="cfg_codigoProduto">
+                                Código do produto
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cfg_pdv">
+                            <label class="form-check-label" for="cfg_pdv">
+                                PDV
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cfg_descricao">
+                            <label class="form-check-label" for="cfg_descricao">
+                                Descrição do produto
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cfg_valorTotal">
+                            <label class="form-check-label" for="cfg_valorTotal">
+                                Valor Total
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="cfg_motivo">
+                            <label class="form-check-label" for="cfg_motivo">
+                                Motivo da divergência
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- ===================== TAB MOTIVOS ===================== -->
+                    <div class="tab-pane fade" id="motivos" role="tabpanel">
+                        <div class="small text-muted">
+                            Em breve: Motivos de divergência personalizáveis. 
+                            <br>Por enquanto, os motivos são fixos e não podem ser alterados.
+                        </div>
+                    </div>
+
+                    <!-- ===================== TAB LEMBRETE ===================== -->
+                    <div class="tab-pane fade" id="lembrete" role="tabpanel">
+                        <p class="text-muted mb-3">
+                            Receba um lembrete para não esquecer de registrar as divergências do dia (processo oficial em papel).
+                        </p>
+
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="cfg_lembreteAtivo">
+                            <label class="form-check-label" for="cfg_lembreteAtivo">
+                                Ativar lembrete
+                            </label>
+                        </div>
+
+                        <div id="lembreteOpcoes" class="d-none">
+                            <div class="mb-3">
+                                <label for="cfg_lembreteHora" class="form-label">Horário</label>
+                                <!-- <input type="time" class="form-control" id="cfg_lembreteHora" value="18:00"> -->
+                                 <input
+                                    type="time"
+                                    class="form-control"
+                                    id="cfg_lembreteHora"
+                                    placeholder="17:00"
+                                    value="17:00"
+                                    required
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Dias da semana (marque os que deseja)</label>
+                                <div id="lembreteListaDias" class="border rounded p-2">
+                                    <!-- gerado via JS -->
+                                </div>
+                                <div class="form-text">Igual ao padrão do “Inter” na escala de funcionários.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-danger" id="btnSalvar">
+                        Salvar configurações
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" id="btnResetar">
+                        Restaurar padrão
+                    </button>
+                </div>
+
+                <div id="mensagemSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                    Configurações salvas com sucesso!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/android-web.js"></script>
+    <script src="js/ui-modals.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/navbar.js"></script>   <!-- ← novo -->
+    <script src="js/configuracoes.js"></script>   <!-- script específico da página -->
+
+</body>
+</html>

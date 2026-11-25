@@ -1,0 +1,103 @@
+/* ==========================
+   APARÊNCIA
+========================== */
+
+.appearance-colors {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 600px;
+}
+
+.appearance-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.appearance-option:hover {
+    background-color: var(--bg-muted);
+    border-color: var(--accent);
+    color: var(--text-primary);
+}
+
+.appearance-option:has(input:checked) {
+    border-color: var(--accent);
+    background-color: var(--bg-muted);
+    color: var(--text-primary);
+}
+
+.appearance-option input[type="radio"] {
+    flex-shrink: 0;
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.appearance-color {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.appearance-label {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: var(--text-primary);
+}
+
+.appearance-label strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.appearance-label small {
+    color: var(--text-muted);
+}
+
+.appearance-dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: var(--text-primary);
+}
+
+.appearance-dark-mode .form-check-input {
+    width: 2.5em;
+    height: 1.25em;
+    cursor: pointer;
+    accent-color: var(--accent);
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width: 576px) {
+    .appearance-colors {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .appearance-option {
+        padding: 12px;
+    }
+
+    .appearance-dark-mode {
+        align-items: center;
+    }
+}
